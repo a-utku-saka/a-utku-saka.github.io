@@ -1,0 +1,112 @@
+/* Sayfa Arka Planı */
+body {
+    background-color: #e8dfd7; 
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Projects Konteyner */
+.projects-container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: transparent;
+}
+
+/* Projects Başlığı */
+.section-title {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+/* Mavi Kare */
+.blue-square {
+    width: 12px;
+    height: 12px;
+    background-color: #838060;
+    display: inline-block;
+}
+
+/* Projects Başlığı */
+.section-subtitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+/* CV İndirme Butonu */
+.download-btn {
+    background-color: #838060;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    right: 10%;
+    top: 40px;
+}
+
+.download-btn:hover {
+    background-color: #6d684a;
+}
+
+/* Projects Kartları */
+.Projects {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* Kart Tasarımı */
+.projects-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Projects Kartının Başlığı */
+.projects-card h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #838060;
+    margin-bottom: 5px;
+}
+
+/* Kart İçeriği */
+.projects-card p {
+    font-size: 15px;
+    color: #444;
+    line-height: 1.6;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+/* Mobil Uyumluluk */
+@media (max-width: 768px) {
+    .projects-container {
+        width: 95%;
+    }
+
+    .projects-card {
+        width: 100%;
+    }
+
+    .download-btn {
+        position: static;
+        display: block;
+        margin: 10px auto;
+    }
+}

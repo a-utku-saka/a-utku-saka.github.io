@@ -1,0 +1,169 @@
+/* Genel Stiller */
+body {
+    background-color: #e8dfd7;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Ana Konteyner */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%; 
+    max-width: 1200px;
+    padding: 20px;
+}
+
+/* Sol Profil Kartı */
+.profile-card {
+    background: #d9cbb8;
+    padding: 30px; 
+    border-radius: 15px;
+    text-align: center;
+    width: 380px; 
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.profile-img {
+    width: 140px; /* Profil fotoğrafı büyütüldü */
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+h1 {
+    font-size: 28px; /* Daha büyük başlık */
+    margin: 10px 0;
+    color: #222;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 18px;
+    margin: 5px 0;
+    color: #666;
+    font-weight: bold;
+}
+
+hr {
+    width: 60%;
+    border: 1px solid #999;
+    margin: 10px auto;
+}
+
+p {
+    font-size: 16px;
+    color: #444;
+}
+
+/* Sosyal Medya İkonları */
+.social-links {
+    margin-top: 15px;
+}
+
+.social-links a {
+    font-size: 22px;
+    margin: 12px;
+    color: #444;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #007bff;
+}
+
+/* Sağ Taraf Metin Bölümü */
+.intro {
+    margin-left: 80px; 
+    max-width: 600px; 
+}
+
+.intro h1 {
+    font-size: 60px; 
+    font-weight: bold;
+    color: #000;
+}
+
+.intro p {
+    font-size: 20px;
+    color: #444;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    padding: 14px 30px; 
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+.resume {
+    background-color: #838060;
+    color: white;
+}
+
+.projects {
+    background-color: white;
+    border: 2px solid #000;
+}
+
+/*  MOBİL UYUM - Ekran Genişliği 768px ve Daha Küçükse */
+@media (max-width: 768px) {
+    body {
+        height: auto;
+        display: block;
+        padding: 20px;
+    }
+
+    .container {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .profile-card {
+        width: 100%;
+        max-width: 400px;
+        margin-bottom: 20px;
+    }
+
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .intro {
+        margin-left: 0;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .intro h1 {
+        font-size: 40px;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button {
+        width: 80%;
+        margin: 5px 0;
+    }
+}
